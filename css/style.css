@@ -1,12 +1,15 @@
-
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    /* Remove espaços desnecessários */
 }
 
 body {
-    background: #222; /* cor fundo */
-    color: #d2d2d2 ; /* cor texto */
+    background: #222;
+    /* cor fundo */
+    color: #d2d2d2;
+    /* cor texto */
 }
 
 i {
@@ -22,4 +25,30 @@ i {
     width: 100%;
     padding: 8px 16px;
     z-index: 2;
+}
+
+.menu {
+    display: flex;
+    /* Deixa os itens ajustados e responsivos */
+    align-items: center;
+    background: #222;
+    gap: 10px;
+    /* Espaço entre os elementos */
+    list-style: none;
+}
+
+.menu-item {
+    width: 100%;
+    /* comprimento */
+
+}
+
+.menu-link {
+    display: flex;
+    text-decoration: none;
+}
+
+.menu-texto {
+    font-size: 20px;
+    text-transform: uppercase;
 }
