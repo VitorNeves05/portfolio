@@ -32,9 +32,17 @@ i {
     /* Deixa os itens ajustados e responsivos */
     align-items: center;
     background: #222;
-    gap: 10px;
+    gap: 25px;
     /* Espaço entre os elementos */
     list-style: none;
+}
+
+.menu-mobile {
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    justify-content: space-between;
+    border-top: 1px solid #f3f3f3;
 }
 
 .menu-item {
@@ -51,4 +59,89 @@ i {
 .menu-texto {
     font-size: 20px;
     text-transform: uppercase;
+}
+
+.menu-mobile .menu-link {
+    flex-direction: column;
+    /* objetos em colunas */
+    justify-content: center;
+    padding: 7px 15px;
+}
+
+/* span = menu-text */
+/* icone = icone bootstrap */
+.menu-link.active .menu-icone,
+.menu-link.active .menu-texto,
+.menu-link:hover .menu-icone,
+.menu-link:hover .menu-texto {
+    color: white;
+    font-weight: 600;
+}
+
+.menu-icone,
+.menu-texto {
+    color: #797979;
+    font-weight: 300;
+}
+
+.menu-icon {
+    font-size: 25px;
+}
+
+.menu-principal {
+    gap: 20px;
+}
+
+.header-nav {
+    display: none;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* atualizações futuras */
+#home {
+    padding: 32px 16px;
+    
+}
+
+/* css Responsivo */
+@media (min-width: 768px) {
+    #header {
+        padding: 16px 80px;
+        position: fixed;
+        border-bottom: 1px solid #f3f3f3;
+        background: #222;
+    }
+
+    .nav-mobile {
+        display: none;
+    }
+
+    .header-nav {
+        display: flex;
+    }
+    #home {
+        padding: 128px 96px 64px 96px;
+    }
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (min-width:1200px) {
+    #home {
+        padding: 160px 96px 32px;
+    }
 }
