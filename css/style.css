@@ -14,7 +14,10 @@
     --texto-opaco: #b3b3b3;
     --cor-borda: #28292E;
     --cor-borda-secundaria: #56575A;
-
+    --btn: #797979;
+    --hover: #eee;
+    --sobra_projetos:rgb(0, 0, 0);
+    --cor-icones:#d2d2d2;
 }
 
 :root,
@@ -32,6 +35,11 @@
     --texto-opaco: #b3b3b3;
     --cor-borda: #C7C8C9;
     --cor-borda-secundaria: #9A9A9C;
+    --btn: #494949;
+    --hover: #222;
+    --sobra_projetos: #c7c8c9;
+    --cor-icones:#222;
+
 }
 
 * {
@@ -311,7 +319,7 @@ a {
 .card-img {
     width: 100%;
     border-radius: 10px;
-    box-shadow: 2px 5px 10px rgb(234, 234, 234);
+    box-shadow: 2px 5px 10px var(--sobra_projetos);
     object-fit: cover;
     object-position: center;
     pointer-events: none;
@@ -343,7 +351,7 @@ a {
 }
 
 .icone-seta {
-    color: cyan;
+    color: var(--cor-texto);
     font-size: 14px;
 }
 
@@ -397,7 +405,7 @@ a {
 .sobre-skills i,
 .sobre-icones i {
     font-size: 20px;
-    color: rgb(4, 155, 220);
+    color: var(--cor-icones);
 }
 
 .sobre-content2 .col1,
